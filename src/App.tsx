@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { Button } from "./components/ui/button";
+import { Button } from "./components/ui/button/button";
 import reactLogo from "./assets/react.svg";
 import { useState } from "react";
 import viteLogo from "/vite.svg";
