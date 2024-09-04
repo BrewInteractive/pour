@@ -3,7 +3,7 @@ import { CardView } from "./card";
 import React from "react";
 
 const meta = {
-  title: "Example/Button",
+  title: "Example/Card",
   component: CardView,
   parameters: {
     layout: "centered",

@@ -4,14 +4,7 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/primitives/card";
-import { ReactNode } from "react";
-
-interface CardProps {
-  title?: ReactNode;
-  description?: string;
-  children?: ReactNode;
-  footer?: ReactNode;
-}
+import { CardProps } from "./card.type";
 
 export const CardView = ({ title, children, footer }: CardProps) => {
   return (
