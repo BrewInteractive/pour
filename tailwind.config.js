@@ -54,7 +54,7 @@ module.exports = {
         text: {
           foreground: "#171717",
         },
-        border: {
+        "border&divider": {
           border: "#D4D4D4",
         },
       },

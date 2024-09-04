@@ -14,7 +14,7 @@ const meta = {
 export default meta;
 
 const Template: StoryObj<typeof CardView> = {
-  render: (args) => <CardView {...args}>Button Label</CardView>,
+  render: (args) => <CardView {...args}> content</CardView>,
 };
 
 export const Default = {
