@@ -38,14 +38,23 @@ module.exports = {
           DEFAULT: "#F0FDFA",
           foreground: "#0F766E",
         },
+        text: {
+          foreground: "#171717",
+        },
+
+        border: "#D4D4D4",
       },
       opacity: {
         default: "0.5",
       },
+
       borderRadius: {
         lg: "8px",
         md: "6px",
         sm: "4px",
+      },
+      boxShadow: {
+        md: "0px 2px 4px -1px rgba(0, 0, 0, 0.06), 0px 4px 6px 1px rgba(0, 0, 0, 0.10)",
       },
     },
   },
