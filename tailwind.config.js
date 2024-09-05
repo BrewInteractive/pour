@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       colors: {
         input: "#D4D4D4",
+        background: "#FFFFFF",
         primary: {
           DEFAULT: "#0D9488",
           foreground: "#FFFFFF",
@@ -37,6 +38,9 @@ module.exports = {
         accent: {
           DEFAULT: "#F0FDFA",
           foreground: "#0F766E",
+        },
+        muted: {
+          foreground: "#737373",
         },
         text: {
           foreground: "#171717",
