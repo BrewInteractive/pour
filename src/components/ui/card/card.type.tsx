@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
-export interface CardProps {
-  title?: ReactNode;
-  description?: string;
+export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: ReactNode;
-  footer?: ReactNode;
+  selected?: boolean;
+  disabled?: boolean;
+  isShadowActive?: boolean;
 }

@@ -50,6 +50,9 @@ module.exports = {
         md: "6px",
         sm: "4px",
       },
+      boxShadow: {
+        md: "0px 2px 4px -1px rgba(0, 0, 0, 0.06), 0px 4px 6px 1px rgba(0, 0, 0, 0.10)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
