@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       colors: {
         input: "#D4D4D4",
+        background: "#FFFFFF",
         primary: {
           DEFAULT: "#0D9488",
           foreground: "#FFFFFF",
@@ -38,6 +39,13 @@ module.exports = {
           DEFAULT: "#F0FDFA",
           foreground: "#0F766E",
         },
+        foreground: "#171717",
+        muted: {
+          foreground: "#737373",
+        },
+      },
+      opacity: {
+        disabled: "0.5",
       },
       borderRadius: {
         lg: "8px",
