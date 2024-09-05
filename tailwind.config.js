@@ -38,10 +38,6 @@ module.exports = {
           DEFAULT: "#F0FDFA",
           foreground: "#0F766E",
         },
-        text: {
-          foreground: "#171717",
-        },
-
         border: "#D4D4D4",
       },
       opacity: {
