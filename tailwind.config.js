@@ -41,10 +41,8 @@ module.exports = {
         text: {
           foreground: "#171717",
         },
-
         border: "#D4D4D4",
       },
-
       borderRadius: {
         lg: "8px",
         md: "6px",
