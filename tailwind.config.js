@@ -39,6 +39,9 @@ module.exports = {
           foreground: "#0F766E",
         },
       },
+      opacity: {
+        default: "0.5",
+      },
       borderRadius: {
         lg: "8px",
         md: "6px",
