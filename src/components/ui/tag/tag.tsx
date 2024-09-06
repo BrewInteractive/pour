@@ -8,12 +8,18 @@ export interface TagProps extends React.HTMLAttributes<HTMLDivElement> {
   suffixItem?: ReactNode;
   backgroundColor: string;
   size?: "sm" | "md" | "lg";
+  variant?: "primary" | "secondary" | "outlined";
 }
 
 const tagVariants = cva(
-  "rounded-md px-2 flex flex-row bg-primary text-primary-foreground items-center justify-center w-fit gap-2",
+  "rounded-md px-2 flex flex-row items-center justify-center w-fit gap-2",
   {
     variants: {
+      variant: {
+        primary: "bg-primary text-primary-foreground ",
+        secondary: "bg-secondary text-foreground",
+        outlined: "border border-border text-foreground",
+      },
       size: {
         sm: "h-6 text-xs",
         md: "h-8 text-sm",
@@ -22,6 +28,7 @@ const tagVariants = cva(
     },
     defaultVariants: {
       size: "md",
+      variant: "primary",
     },
   }
 );
@@ -34,13 +41,14 @@ const Tag = React.forwardRef<HTMLDivElement, TagProps>(
       label,
       prefixItem,
       suffixItem,
+      variant,
       ...props
     },
     ref
   ) => (
     <div
       ref={ref}
-      className={cn(tagVariants({ className, size }), backgroundColor)}
+      className={cn(tagVariants({ className, size, variant }), backgroundColor)}
       {...props}
     >
       {prefixItem}

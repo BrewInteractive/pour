@@ -28,6 +28,30 @@ export const Default = {
   },
 };
 
+export const Secondary = {
+  ...Template,
+  args: {
+    variant: "secondary",
+    label: (
+      <div className="font-semibold flex flex-row">
+        Title: <div className="font-normal">Tag Example</div>
+      </div>
+    ),
+  },
+};
+
+export const Outlined = {
+  ...Template,
+  args: {
+    variant: "outlined",
+    label: (
+      <div className="font-semibold flex flex-row">
+        Title: <div className="font-normal">Tag Example</div>
+      </div>
+    ),
+  },
+};
+
 export const Small = {
   ...Template,
   args: {
