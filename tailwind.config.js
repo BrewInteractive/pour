@@ -49,7 +49,6 @@ module.exports = {
           foreground: "#171717",
         },
       },
-
       borderRadius: {
         lg: "8px",
         md: "6px",
