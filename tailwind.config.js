@@ -21,6 +21,7 @@ module.exports = {
         input: "#D4D4D4",
         background: "#FFFFFF",
         foreground: "#171717",
+        border: "#D4D4D4",
         primary: {
           DEFAULT: "#0D9488",
           foreground: "#FFFFFF",
@@ -44,11 +45,18 @@ module.exports = {
           DEFAULT: "red",
           foreground: "yellow",
         },
+        text: {
+          foreground: "#171717",
+        },
       },
+
       borderRadius: {
         lg: "8px",
         md: "6px",
         sm: "4px",
+      },
+      boxShadow: {
+        md: "0px 2px 4px -1px rgba(0, 0, 0, 0.06), 0px 4px 6px 1px rgba(0, 0, 0, 0.10)",
       },
     },
   },
