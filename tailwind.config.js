@@ -20,6 +20,8 @@ module.exports = {
       colors: {
         input: "#D4D4D4",
         background: "#FFFFFF",
+        foreground: "#171717",
+        border: "#D4D4D4",
         primary: {
           DEFAULT: "#0D9488",
           foreground: "#FFFFFF",
@@ -45,10 +47,11 @@ module.exports = {
         text: {
           foreground: "#171717",
         },
-
-        border: "#D4D4D4",
       },
 
+      opacity: {
+        default: "0.5",
+      },
       borderRadius: {
         lg: "8px",
         md: "6px",
