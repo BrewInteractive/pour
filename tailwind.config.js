@@ -21,6 +21,7 @@ module.exports = {
         input: "#D4D4D4",
         background: "#FFFFFF",
         foreground: "#171717",
+        border: "#D4D4D4",
         primary: {
           DEFAULT: "#0D9488",
           foreground: "#FFFFFF",
@@ -40,13 +41,17 @@ module.exports = {
           DEFAULT: "#F0FDFA",
           foreground: "#0F766E",
         },
+        muted: {
+          foreground: "#737373",
+        },
         text: {
           foreground: "#171717",
         },
-
-        border: "#D4D4D4",
       },
 
+      opacity: {
+        default: "0.5",
+      },
       borderRadius: {
         lg: "8px",
         md: "6px",
