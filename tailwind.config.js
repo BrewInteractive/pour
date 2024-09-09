@@ -41,10 +41,11 @@ module.exports = {
           DEFAULT: "#F0FDFA",
           foreground: "#0F766E",
         },
-
         muted: {
-          DEFAULT: "red",
-          foreground: "yellow",
+          foreground: "#737373",
+        },
+        text: {
+          foreground: "#171717",
         },
       },
 
