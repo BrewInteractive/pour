@@ -41,13 +41,15 @@ module.exports = {
           DEFAULT: "#F0FDFA",
           foreground: "#0F766E",
         },
+
         muted: {
           DEFAULT: "red",
           foreground: "yellow",
         },
-        text: {
-          foreground: "#171717",
-        },
+      },
+
+      opacity: {
+        default: "0.5",
       },
       borderRadius: {
         lg: "8px",
