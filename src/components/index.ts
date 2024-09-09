@@ -1,4 +1,5 @@
 export * from "./ui/button/button";
+export * from "./ui/select/select";
 export * from "./ui/checkbox/checkbox";
 export * from "./ui/tabs/tabs";
 export * from "./ui/card/card";
