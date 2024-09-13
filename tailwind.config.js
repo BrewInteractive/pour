@@ -48,7 +48,7 @@ module.exports = {
           foreground: "#171717",
         },
         popover: {
-          DEFAULT: "FFFFFF",
+          DEFAULT: "#FFFFFF",
           foreground: "#171717",
         },
       },
