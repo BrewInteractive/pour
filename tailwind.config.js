@@ -47,8 +47,11 @@ module.exports = {
         text: {
           foreground: "#171717",
         },
+        popover: {
+          DEFAULT: "FFFFFF",
+          foreground: "#171717",
+        },
       },
-
       opacity: {
         default: "0.5",
       },

@@ -7,3 +7,5 @@ export * from "./ui/card/card";
 export * from "./ui/dialog/dialog";
 export * from "./ui/tag/tag";
 export * from "./ui/avatar/avatar";
+
+export * from "./ui/context-menu/context-menu";
