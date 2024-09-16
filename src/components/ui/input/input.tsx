@@ -20,7 +20,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     ref
   ) => {
     return (
-      <div className={cn(" w-full h-fit", disabled && "opacity-disabled")}>
+      <div className={cn("w-full h-fit", disabled && "opacity-disabled")}>
         {label && (
           <div className="text-sm font-medium text-foreground">{label}</div>
         )}
@@ -34,7 +34,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             disabled={disabled}
             type={type}
             className={cn(
-              "flex h-10 w-full rounded-md border border-input text-foreground bg-background px-3 items-center justify-center text-sm ring-offset-background placeholder:text-muted-foreground disabled:cursor-not-allowed",
+              "flex h-10 w-full rounded-md border border-input text-foreground bg-background px-3 items-center justify-center text-sm  placeholder:text-muted-foreground disabled:cursor-not-allowed focus:border-primary focus-visible:border-primary focus:ring-0 hover:ring-0 focus-visible:outline-none hover:border-primary focus-visible:ring-0",
               prefixItemPadding,
               suffixItemPadding,
               className
