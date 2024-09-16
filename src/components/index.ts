@@ -9,3 +9,4 @@ export * from "./ui/tag/tag";
 export * from "./ui/avatar/avatar";
 
 export * from "./ui/context-menu/context-menu";
+export * from "./ui/textarea/textarea";
