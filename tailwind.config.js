@@ -53,6 +53,7 @@ module.exports = {
         },
       },
       opacity: {
+        disabled: "0.5",
         default: "0.5",
       },
       borderRadius: {
