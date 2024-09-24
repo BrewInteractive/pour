@@ -42,6 +42,7 @@ module.exports = {
           foreground: "#0F766E",
         },
         muted: {
+          DEFAULT: "#F5F5F5",
           foreground: "#737373",
         },
         text: {
@@ -53,6 +54,7 @@ module.exports = {
         },
       },
       opacity: {
+        disabled: "0.5",
         default: "0.5",
       },
       borderRadius: {
