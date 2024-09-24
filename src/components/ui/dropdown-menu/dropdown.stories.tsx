@@ -5,7 +5,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "./dropdown-menu";
@@ -23,7 +22,7 @@ export default meta;
 
 const Template: StoryObj<typeof DropdownMenu> = {
   render: (args) => (
-    <DropdownMenu>
+    <DropdownMenu {...args}>
       <DropdownMenuTrigger>Open</DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem inset>Source</DropdownMenuItem>
