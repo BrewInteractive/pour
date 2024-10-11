@@ -47,6 +47,18 @@ export const Primary = {
   },
 };
 
+export const PrimaryLoading = {
+  ...Template,
+  args: {
+    size: "default",
+    variant: "default",
+    onClick: () => {
+      console.log("on click");
+    },
+    isLoading: true,
+  },
+};
+
 export const Secondary = {
   ...Template,
   args: {
