@@ -37,17 +37,29 @@ interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
+  isLoading?: boolean;
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  ({ className, variant, size, asChild = false, isLoading, ...props }, ref) => {
     const Comp = asChild ? Slot : "button";
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
-      />
+      >
+        {isLoading ? (
+          <div className="flex flex-row gap-2 items-center justify-center">
+            <div className="inline-block w-4 h-4 border border-transparent border-l-primary-foreground border-t-primary-foreground border-b-primary-foreground rounded-full box-border animate-spin" />
+            <div className="text-sm font-medium text-primary-foreground">
+              Loading
+            </div>
+          </div>
+        ) : (
+          props.children
+        )}
+      </Comp>
     );
   }
 );

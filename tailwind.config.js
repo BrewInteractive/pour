@@ -57,6 +57,15 @@ module.exports = {
         disabled: "0.5",
         default: "0.5",
       },
+      keyframes: {
+        spin: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
+      },
+      animation: {
+        spin: "spin 1s linear infinite;",
+      },
       borderRadius: {
         lg: "8px",
         md: "6px",
