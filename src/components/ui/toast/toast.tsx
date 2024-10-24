@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ToastPrimitives from "@radix-ui/react-toast";
 import { cva, type VariantProps } from "class-variance-authority";
-import { X } from "lucide-react";
+import { CheckCircle2, X, XCircle } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -48,11 +48,19 @@ const Toast = React.forwardRef<
       ref={ref}
       className={cn(toastVariants({ variant }), className)}
       {...props}
-    />
+    >
+      <div className="flex flex-row gap-6">
+        {variant === "destructive" ? (
+          <XCircle className="h-6 w-6" />
+        ) : (
+          <CheckCircle2 className="h-6 w-6" />
+        )}
+
+        {props.children}
+      </div>
+    </ToastPrimitives.Root>
   );
 });
-Toast.displayName = ToastPrimitives.Root.displayName;
-
 const ToastAction = React.forwardRef<
   React.ElementRef<typeof ToastPrimitives.Action>,
   React.ComponentPropsWithoutRef<typeof ToastPrimitives.Action>
